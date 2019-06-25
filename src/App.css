@@ -1,0 +1,229 @@
+.App {
+  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+  font-family: 'Raleway', sans-serif;
+}
+
+body, header, section, footer {
+  margin: 0;
+  padding: 1px;;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+}
+
+.scroll {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+.center {
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Nav bar CSS */
+.header-nav {
+  background-color: #11242F;
+  top:0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  border-bottom: 7px solid #00ff7f;
+  color:#f9f3d1;
+  z-index: 99;
+}
+
+/*Home CSS*/
+#home {
+  background: linear-gradient(to bottom right, #252934 0%, #252934 100%);
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.flexhome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+}
+
+.gold {
+  color:#f9f3d1;
+}
+
+.mattjoyce{
+  color:#00ff7f;
+  opacity:1;
+
+}
+
+.viewprofile{
+  width: 300px;
+  padding: 20px 30px;
+  border: 2px solid #fff;
+  box-sizing: inherit;
+  display: inline-block;
+  font-size: 20pt;
+  font-weight: 700;
+  opacity: 1;
+  transition: all .5s;
+  cursor: pointer;
+  color: #f9f3d1;
+  position: relative;
+}
+
+div.viewprofile:hover {
+  background-color: #00ff7f;
+  color: #f9f3d1;
+}
+
+/*About CSS*/
+#about {
+  background: white;
+  scroll-snap-align: start;
+}
+
+.about-images {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 5%;;
+
+}
+
+/*Education */
+#education {
+  background: #F5F5F5;
+  scroll-snap-align: start;
+}
+
+/*Experiences*/
+#experiences {
+  background: #e7e3d4;
+  scroll-snap-align: start;
+}
+
+.margins {
+  margin: 0;
+  padding: 0;
+}
+
+/*Projects CSS*/
+#projects {
+  background: 	#f2f2f2;
+  scroll-snap-align: start;
+}
+
+.project-cell {
+  background-position: center center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.arrow-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.fa-arrow-right {
+  position: absolute;
+  right: 24.5%;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.fa-arrow-left {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/*Skills CSS*/
+#skills {
+  background: #f9f1f1;
+  scroll-snap-align: start;
+}
+
+.image-anchor {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
